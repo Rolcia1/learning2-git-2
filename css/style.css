@@ -22,15 +22,27 @@ body {
     transform: translate(-50%,-50%);
 }
 .page-title {
-    color: #46555C;
+    color: #723424;
     font-size: 36px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
 }
 
+.page-title::after {
+    position: absolute;
+    content: '';
+    bottom: -24px;
+    left: 50%;
+    width: 200px;
+    height: 5px;
+    transform: translateX(-50%);
+    background: #723424;
+}
 .page-subtitle {
     color: #723424;
     font-style: italic;
     font-size: 24px;
+    margin: 48px 0 0 0;
 }
 .poem {
     margin-top: 60px;
@@ -38,6 +50,7 @@ body {
     margin-bottom: 60px;
     font-style: italic;
 }
+
 .page-footer {
     background: #D45837;
     color: #D3E1E6;
