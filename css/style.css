@@ -13,6 +13,7 @@ body {
     background-position: center center;
     background-size: cover;
     background-attachment: fixed; 
+    color: #723424;
 }
 .splash-inner {
     position: absolute;
